@@ -316,6 +316,18 @@ def saveListListToCSV(csvfilename, listfield, listlistrecord) :
         f.write(",".join([str(aa) for aa in listrecord]) + "\n")
     f.close()
 
+def savedictdictdictToCSV(csvfilename, listkey1, listkey2, dictdictdictrecord) :
+    f = open(csvfilename, "w")
+    f.write("," + ",".join([ str(aa) for aa in listkey2]) + "\n")
+    for key0 in dictdictdictrecord :
+        f.write(key0 + "\n")
+        dictdictrecord = dictdictdictrecord[key0]
+        for key1 in listkey1 :
+            dictrecord = dictdictrecord[key1]
+            f.write(key1 +"," +  ",".join([str(dictrecord[aa]) for aa in listkey2]) + "\n")
+    f.close()
+
+
 def buildDataBase():
     update주식차트([],"20130930", "20151001" )
     updateFNG_요약([])
