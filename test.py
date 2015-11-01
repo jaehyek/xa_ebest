@@ -9,7 +9,6 @@ import XAQuery
 
 
 
-
 if __name__ == "__main__":
     # if login.login() == False :
     #     print("login failed")
@@ -17,7 +16,9 @@ if __name__ == "__main__":
 
     # XATrends.plotchart("LG전자")
     # XATrends.plotchart("LG화학")
-    XATrends.plotchart("삼성전자")
+    # XATrends.plotchart("삼성전자")
+    # XATrends.createHistorgramOfPERPBRByMarket()
+    XATrends.createHistogramOfJongmok("삼성전자")
     pass
 
 
